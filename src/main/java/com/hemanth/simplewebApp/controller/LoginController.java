@@ -1,4 +1,4 @@
-package com.hemanth.simplewebApp;
+package com.hemanth.simplewebApp.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
