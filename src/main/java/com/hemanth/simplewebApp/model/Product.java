@@ -1,5 +1,7 @@
 package com.hemanth.simplewebApp.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -8,21 +10,17 @@ import lombok.Data;
  */
 @Data
 @AllArgsConstructor
+@Entity
 public class Product {
     
-    /**
-     * The ID of the product.
-     */
-    private int prodId;
-    
-    /**
-     * The name of the product.
-     */
-    private String prodName;
-    
-    /**
-     * The price of the product.
-     */
-    private int price;
+    public Product() {
+        //TODO Auto-generated constructor stub
+    }
+
+ 
+    @Id
+    private int prodId;    // The ID of the product
+    private String prodName;// The name of the product
+    private int price;      // The price of the product
 
 }
